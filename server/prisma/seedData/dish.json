@@ -1,0 +1,506 @@
+[
+  {
+    "name": {
+      "es": "Agua Sin Gas",
+      "pt": "Água Sem Gás",
+      "en": "Still Water"
+    },
+    "price": 6.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Agua Con Gas",
+      "pt": "Água Com Gás",
+      "en": "Sparkling Water"
+    },
+    "price": 6.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Agua Tónica",
+      "pt": "Água Tônica",
+      "en": "Tonic Water"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Jugo de Frutas",
+      "pt": "Suco De Frutas",
+      "en": "Fruit Juice"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Jugo de Naranja",
+      "pt": "Suco De Laranja",
+      "en": "Orange Juice"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Energético TNT",
+      "pt": "Energético TNT",
+      "en": "TNT Energy Drink"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Coca Cola",
+      "pt": "Coca Cola",
+      "en": "Coca Cola"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Coca Cola Zero",
+      "pt": "Coca Zero",
+      "en": "Coca Cola Zero"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Guaraná",
+      "pt": "Guaraná",
+      "en": "Guarana"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Fanta Naranja",
+      "pt": "Fanta Laranja",
+      "en": "Fanta Orange"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Sprite",
+      "pt": "Sprite",
+      "en": "Sprite"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Citrus",
+      "pt": "Citrus",
+      "en": "Citrus"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Cerveza Sin Alcohol",
+      "pt": "Cerveja Sem Alcool",
+      "en": "Non-Alcoholic Beer"
+    },
+    "price": 12.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Heineken",
+      "pt": "Heineken",
+      "en": "Heineken"
+    },
+    "price": 12.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Eisenbahn",
+      "pt": "Eisenbahn",
+      "en": "Eisenbahn"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Malzbier",
+      "pt": "Malzbier",
+      "en": "Malzbier"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Brahma Doble Malta",
+      "pt": "Brahma Duplo Malte",
+      "en": "Brahma Double Malt"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Petra",
+      "pt": "Petra",
+      "en": "Petra"
+    },
+    "price": 9.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Vodka Absolut",
+      "pt": "Vodka Absolut",
+      "en": "Absolut Vodka"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Whiskey Jack Daniel's",
+      "pt": "Whiskey Jack Daniel's",
+      "en": "Jack Daniel's Whiskey"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Whiskey Johnnie Walker",
+      "pt": "Whiskey Johnnie Walker",
+      "en": "Johnnie Walker Whiskey"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Tequila",
+      "pt": "Tequila",
+      "en": "Tequila"
+    },
+    "price": 20.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Ron",
+      "pt": "Rum",
+      "en": "Rum"
+    },
+    "price": 20.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Café Soluble",
+      "pt": "Café Solúvel",
+      "en": "Instant Coffee"
+    },
+    "price": 5.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café Negro",
+      "pt": "Café Preto",
+      "en": "Black Coffee"
+    },
+    "price": 5.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café con Leche",
+      "pt": "Café com Leite",
+      "en": "Coffee with Milk"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café Irlandés",
+      "pt": "Café Irlandês",
+      "en": "Irish Coffee"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Espresso",
+      "pt": "Espresso",
+      "en": "Espresso"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "100ml",
+      "pt": "100ml",
+      "en": "100ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Baileys",
+      "pt": "Baileys",
+      "en": "Baileys"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "50ml",
+      "pt": "50ml",
+      "en": "50ml"
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Sangría",
+      "pt": "Sangria",
+      "en": "Sangria"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Margarita",
+      "pt": "Margarita",
+      "en": "Margarita"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Caipirinha",
+      "pt": "Caipirinha",
+      "en": "Caipirinha"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Pina Colada",
+      "pt": "Pina Colada",
+      "en": "Pina Colada"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Piña Colada con Ron",
+      "pt": "Piña Colada Com Rum",
+      "en": "Pina Colada with Rum"
+    },
+    "price": 35.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Pizza Margarita",
+      "pt": "Pizza Margherita",
+      "en": "Margherita Pizza"
+    },
+    "price": 48.0,
+    "info": {
+      "es": "Pizza de mozzarella, tomate, albahaca fresca y aceite de oliva.",
+      "pt": "Pizza de mussarela, tomate, manjericão fresco e azeite de oliva.",
+      "en": "Mozzarella pizza with tomato, fresh basil, and olive oil."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Pizza Napolitana",
+      "pt": "Pizza Napolitana",
+      "en": "Napolitana Pizza"
+    },
+    "price": 52.0,
+    "info": {
+      "es": "Pizza de mozzarella, tomate, albahaca fresca y aceite de oliva.",
+      "pt": "Pizza de mussarela, tomate, manjericão fresco e azeite de oliva.",
+      "en": "Mozzarella pizza with tomato, fresh basil, and olive oil."
+    },
+    "categoryId": 14
+  }
+]

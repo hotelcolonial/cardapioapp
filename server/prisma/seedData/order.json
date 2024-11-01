@@ -1,0 +1,18 @@
+[
+  {
+    "sessionId": "uuid-de-sesion-1",
+    "total": 19.0,
+    "clientName": "John Doe",
+    "status": "PENDING",
+    "roomNumber": 103,
+    "createdAt": "2024-11-01T12:00:00Z"
+  },
+  {
+    "sessionId": "uuid-de-sesion-2",
+    "total": 30.0,
+    "clientName": "Jane Smith",
+    "status": "PENDING",
+    "roomNumber": 205,
+    "createdAt": "2024-11-01T12:00:00Z"
+  }
+]
