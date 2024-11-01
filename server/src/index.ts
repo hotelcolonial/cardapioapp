@@ -20,11 +20,11 @@ app.get("/", (req, res) => {
   res.send("This is home root");
 });
 
-const port = process.env.PORT || 3000;
+const port = Number(process.env.PORT) || 3000;
 
 app.use("/menu", menuRoutes);
 app.use("/order", orderRoutes);
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);
 });
