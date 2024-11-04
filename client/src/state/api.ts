@@ -1,4 +1,3 @@
-import { createOrder } from "./../../../server/src/controllers/orderController";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export type LanguageType = "pt" | "en" | "es";
