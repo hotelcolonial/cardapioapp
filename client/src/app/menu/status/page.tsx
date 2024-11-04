@@ -149,7 +149,7 @@ const StatusPage = () => {
                   </p>
                   {/* Mostrar los items de la orden */}
                   <ul className="mt-2">
-                    <h3 className="font-semibold border-t-2 border">Items</h3>
+                    <h3 className="font-semibold">Items</h3>
                     {order.orderItems.map((item) => (
                       <li key={item.id} className="text-xs">
                         <p>
