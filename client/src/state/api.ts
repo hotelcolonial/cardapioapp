@@ -42,7 +42,7 @@ export interface CartItem {
 
 export interface Cart {
   id: number;
-  sessionId: String;
+  sessionId: string;
   cartItems: CartItem[];
 }
 

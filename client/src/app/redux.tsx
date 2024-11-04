@@ -1,7 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import {
+  combineReducers,
+  configureStore,
+  EnhancedStore,
+} from "@reduxjs/toolkit";
 import {
   TypedUseSelectorHook,
   useDispatch,
@@ -21,20 +25,30 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
+  Persistor,
+  PersistConfig,
 } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 
 /* REDUX PERSISTENCE */
-const createNoopStorage = () => {
+
+// Definir una interfaz para el almacenamiento de no operación
+interface NoopStorage {
+  getItem(key: string): Promise<null>;
+  setItem(key: string, value: any): Promise<any>;
+  removeItem(key: string): Promise<void>;
+}
+
+const createNoopStorage = (): NoopStorage => {
   return {
-    getItem(_key: any) {
+    getItem(_key: string) {
       return Promise.resolve(null);
     },
-    setItem(_key: any, value: any) {
+    setItem(_key: string, value: any) {
       return Promise.resolve(value);
     },
-    removeItem(_key: any) {
+    removeItem(_key: string) {
       return Promise.resolve();
     },
   };
@@ -45,7 +59,7 @@ const storage =
     ? createNoopStorage()
     : createWebStorage("local");
 
-const persistConfig = {
+const persistConfig: PersistConfig<ReturnType<typeof rootReducer>> = {
   timeout: 100,
   key: "root",
   storage,
@@ -56,7 +70,11 @@ const rootReducer = combineReducers({
   global: globalReducer,
   [api.reducerPath]: api.reducer,
 });
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const persistedReducer = persistReducer<ReturnType<typeof rootReducer>>(
+  persistConfig,
+  rootReducer
+);
 
 /* REDUX STORE */
 export const makeStore = () => {
@@ -73,7 +91,7 @@ export const makeStore = () => {
 
 /* REDUX TYPES */
 export type AppStore = ReturnType<typeof makeStore>;
-export type RootState = ReturnType<AppStore["getState"]>;
+export type RootState = ReturnType<typeof rootReducer>;
 export type AppDispatch = AppStore["dispatch"];
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
@@ -89,11 +107,14 @@ export default function StoreProvider({
     storeRef.current = makeStore();
     setupListeners(storeRef.current.dispatch);
   }
-  const persistor = persistStore(storeRef.current);
+  const persistorRef = useRef<Persistor>();
+  if (!persistorRef.current && storeRef.current) {
+    persistorRef.current = persistStore(storeRef.current);
+  }
 
   return (
-    <Provider store={storeRef.current}>
-      <PersistGate loading={null} persistor={persistor}>
+    <Provider store={storeRef.current!}>
+      <PersistGate loading={null} persistor={persistorRef.current!}>
         {children}
       </PersistGate>
     </Provider>
