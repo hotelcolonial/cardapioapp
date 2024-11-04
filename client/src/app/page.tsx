@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     router.push("/menu"); // Redirige a "/menu" cuando el componente se monta
-  }, []);
+  }, [router]);
 
   return null; // Evita renderizar contenido mientras redirige
 }
