@@ -1,5 +1,6 @@
 "use client";
 
+import { signOut } from "aws-amplify/auth";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,8 +23,16 @@ interface SidebarProps {
 const Sidebar = ({ menuItems }: SidebarProps) => {
   const pathName = usePathname();
 
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+    } catch (error) {
+      console.log("Error signing out");
+    }
+  };
+
   return (
-    <div className="flex-1 hidden fixed top-0 lg:flex flex-col justify-center min-h-screen h-full border border-r-soft-gray border-t-0">
+    <div className="flex-1 hidden fixed font-raleway top-0 lg:flex flex-col justify-center min-h-screen h-full border border-r-soft-gray border-t-0">
       <div className="space-y-1 text-center mx-auto px-2 py-10">
         <h1 className="font-vibes text-4xl">Hotel Colonial</h1>
         <p className="text-primary-gray font-quicksand text-xs">
@@ -65,7 +74,10 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
           </div>
         ))}
       </aside>
-      <button className="btn bg-primary-green bg-opacity-80 text-primary-white mt-auto m-4 w-full xl:w-4/5 text-sm relative left-0 mx-auto">
+      <button
+        onClick={handleSignOut}
+        className="btn bg-primary-green bg-opacity-80 text-primary-white mt-auto m-4 w-full xl:w-4/5 text-sm relative left-0 mx-auto"
+      >
         Finalizar sessão
       </button>
     </div>
