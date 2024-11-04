@@ -42,7 +42,7 @@ const StatusPage = () => {
 
   const { data: orders, error } = useSWR(
     sessionId
-      ? `${process.env.NEXT_PUBLIC_API_URL}/order/getorderbysessionid/${sessionId}`
+      ? `${process.env.NEXT_PUBLIC_API_BASE_URL}/order/getorderbysessionid/${sessionId}`
       : null,
     fetcher,
     { refreshInterval: 5000 }

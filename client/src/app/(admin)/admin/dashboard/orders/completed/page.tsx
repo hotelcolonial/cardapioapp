@@ -22,7 +22,7 @@ const CompletedOrdersPage = () => {
   const [status, setStatus] = useState<string>("");
   const [updateOrderStatus] = useUpdateOrderStatusMutation();
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const { data: orders, error } = useSWR(
     `${apiUrl}/order/getorderbystatusroomid?status=READY`,
