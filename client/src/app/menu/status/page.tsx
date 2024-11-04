@@ -5,6 +5,7 @@ import { useAppSelector } from "@/app/redux";
 import LanguageSelectorMenu from "@/components/menu/LanguageSelectorMenu";
 import { Order } from "@/state/api";
 import useSWR from "swr";
+import Splash from "@/components/ui/Splash";
 
 const ordersText: { [key: string]: string } = {
   pt: "Meus pedidos",
@@ -49,7 +50,7 @@ const StatusPage = () => {
   );
 
   if (error) return <div>Error al cargar los pedidos</div>;
-  if (!orders) return <div>Cargando...</div>;
+  if (!orders) return <Splash />;
 
   const deliveredOrders = Array.isArray(orders)
     ? orders.filter((order: { status: string }) => order.status === "DELIVERED")
