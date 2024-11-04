@@ -6,22 +6,39 @@ import Modal from "@/components/ui/Modal";
 import Swal from "sweetalert2";
 import { useUpdateOrderStatusMutation } from "@/state/api";
 
-// Função para agrupar pedidos por data
-const groupOrdersByDate = (orders: any[]) => {
-  return orders.reduce(
-    (
-      acc: { [x: string]: any[] },
-      order: { createdAt: string | number | Date }
-    ) => {
-      const date = new Date(order.createdAt).toLocaleDateString();
-      if (!acc[date]) {
-        acc[date] = [];
-      }
-      acc[date].push(order);
-      return acc;
-    },
-    {}
-  );
+// Definir la interfaz para los elementos de pedido
+interface OrderItem {
+  id: number;
+  dish: {
+    name: {
+      pt: string;
+    };
+    price: number;
+  };
+  quantity: number;
+}
+
+// Definir la interfaz para los pedidos
+interface Order {
+  id: number;
+  createdAt: string | number | Date;
+  roomNumber: number;
+  clientName: string;
+  total: number;
+  status: string;
+  orderItems: OrderItem[];
+}
+
+// Función para agrupar pedidos por fecha
+const groupOrdersByDate = (orders: Order[]) => {
+  return orders.reduce((acc: { [date: string]: Order[] }, order: Order) => {
+    const date = new Date(order.createdAt).toLocaleDateString();
+    if (!acc[date]) {
+      acc[date] = [];
+    }
+    acc[date].push(order);
+    return acc;
+  }, {});
 };
 
 const fetcher = (url: string) =>
@@ -34,13 +51,13 @@ const fetcher = (url: string) =>
 
 const CancelledOrdersPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedOrder, setSelectedOrder] = useState<any>(null);
+  const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [status, setStatus] = useState<string>("");
   const [updateOrderStatus] = useUpdateOrderStatusMutation();
 
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-  const { data: orders, error } = useSWR(
+  const { data: orders, error } = useSWR<Order[]>(
     `${apiUrl}/order/getorderbystatusroomid?status=CANCEL`,
     fetcher,
     { refreshInterval: 5000 }
@@ -51,7 +68,7 @@ const CancelledOrdersPage = () => {
 
   const ordersGroupedByDate = groupOrdersByDate(orders);
 
-  const openModal = (order: any) => {
+  const openModal = (order: Order) => {
     setSelectedOrder(order);
     setStatus(order.status);
     setIsModalOpen(true);
@@ -64,15 +81,16 @@ const CancelledOrdersPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!selectedOrder) return;
     try {
       await updateOrderStatus({ orderId: selectedOrder.id, status });
       closeModal();
-      Swal.fire("Sucesso", "Estado do pedido atualizado.", "success");
+      Swal.fire("Sucesso", "Status do pedido atualizado.", "success");
     } catch (error) {
-      console.error("Erro ao atualizar o estado do pedido:", error);
+      console.error("Erro ao atualizar o status do pedido:", error);
       Swal.fire(
         "Erro",
-        "Ocorreu um erro ao atualizar o estado do pedido.",
+        "Ocorreu um erro ao atualizar o status do pedido.",
         "error"
       );
     }
@@ -81,11 +99,11 @@ const CancelledOrdersPage = () => {
   return (
     <div className="font-raleway py-10 lg:py-0">
       <h1 className="text-2xl font-black text-primary-green">
-        Pedidos cancelados
+        Pedidos entregues
       </h1>
       <div className="py-6">
         {Object.keys(ordersGroupedByDate).length === 0 ? (
-          <div>Não há pedidos cancelados</div>
+          <div>Não há pedidos entregues.</div>
         ) : (
           Object.keys(ordersGroupedByDate).map((date) => (
             <div key={date} className="mb-6">
@@ -102,7 +120,7 @@ const CancelledOrdersPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {ordersGroupedByDate[date].map((order: any) => (
+                  {ordersGroupedByDate[date].map((order) => (
                     <tr key={order.id} className="hover:bg-gray-100">
                       <td className="py-2 px-4 border-b text-center">
                         {order.roomNumber}
@@ -111,7 +129,7 @@ const CancelledOrdersPage = () => {
                         {order.clientName}
                       </td>
                       <td className="py-2 px-4 border-b text-center">
-                        R$ {order.total.toFixed(2)}
+                        R${order.total.toFixed(2)}
                       </td>
                       <td className="py-2 px-4 border-b text-center">
                         <button
@@ -147,15 +165,15 @@ const CancelledOrdersPage = () => {
               <strong>Número do Quarto:</strong> {selectedOrder.roomNumber}
             </p>
             <p>
-              <strong>Total:</strong> R$ {selectedOrder.total}
+              <strong>Total:</strong> R${selectedOrder.total}
             </p>
             <p>
-              <strong>Estado Atual:</strong> {selectedOrder.status}
+              <strong>Status Atual:</strong> {selectedOrder.status}
             </p>
 
             <h3 className="mt-4 text-md font-semibold">Itens do Pedido:</h3>
             <ul className="list-disc pl-5 pb-2">
-              {selectedOrder.orderItems.map((item: any) => (
+              {selectedOrder.orderItems.map((item) => (
                 <li key={item.id} className="py-1">
                   <span>
                     <strong>{item.dish.name.pt}:</strong> {item.quantity} x R$
@@ -173,12 +191,6 @@ const CancelledOrdersPage = () => {
               >
                 Fechar
               </button>
-              {/*    <button
-                type="submit"
-                className="py-2 px-4 text-xs hover:bg-opacity-70 text-white bg-blue-700 bg-opacity-80"
-              >
-                Atualizar Estado
-              </button> */}
             </div>
           </form>
         </Modal>

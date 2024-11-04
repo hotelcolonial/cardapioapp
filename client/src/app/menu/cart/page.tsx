@@ -37,7 +37,7 @@ const CartPage = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      let storedUserId = localStorage.getItem("sessionId");
+      const storedUserId = localStorage.getItem("sessionId");
       setSessionId(storedUserId ?? "");
     }
   }, []);

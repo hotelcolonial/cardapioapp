@@ -5,7 +5,7 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import Modal from "@/components/ui/Modal";
 import { useState } from "react";
 import InputField from "@/components/ui/InputField";
-import { useUpdateOrderStatusMutation } from "@/state/api";
+import { Order, useUpdateOrderStatusMutation } from "@/state/api";
 import Swal from "sweetalert2";
 
 const fetcher = (url: string | URL | Request) =>
@@ -18,7 +18,7 @@ const fetcher = (url: string | URL | Request) =>
 
 const CompletedOrdersPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [selectedOrder, setSelectedOrder] = useState<any>(null);
+  const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [status, setStatus] = useState<string>("");
   const [updateOrderStatus] = useUpdateOrderStatusMutation();
 
@@ -58,7 +58,7 @@ const CompletedOrdersPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await updateOrderStatus({ orderId: selectedOrder.id, status });
+      await updateOrderStatus({ orderId: selectedOrder?.id ?? 0, status });
 
       closeModal();
       Swal.fire("Sucesso", "Estado do pedido atualizado.", "success");

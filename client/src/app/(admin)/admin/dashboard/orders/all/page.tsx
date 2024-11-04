@@ -6,22 +6,39 @@ import Modal from "@/components/ui/Modal";
 import Swal from "sweetalert2";
 import { useUpdateOrderStatusMutation } from "@/state/api";
 
-// Função para agrupar pedidos por data
-const groupOrdersByDate = (orders: any[]) => {
-  return orders.reduce(
-    (
-      acc: { [x: string]: any[] },
-      order: { createdAt: string | number | Date }
-    ) => {
-      const date = new Date(order.createdAt).toLocaleDateString();
-      if (!acc[date]) {
-        acc[date] = [];
-      }
-      acc[date].push(order);
-      return acc;
-    },
-    {}
-  );
+// Definir la interfaz para los elementos de pedido
+interface OrderItem {
+  id: number;
+  dish: {
+    name: {
+      pt: string;
+    };
+    price: number;
+  };
+  quantity: number;
+}
+
+// Definir la interfaz para los pedidos
+interface Order {
+  id: number;
+  createdAt: string | number | Date;
+  roomNumber: number;
+  clientName: string;
+  total: number;
+  status: string;
+  orderItems: OrderItem[];
+}
+
+// Función para agrupar pedidos por fecha
+const groupOrdersByDate = (orders: Order[]) => {
+  return orders.reduce((acc: { [date: string]: Order[] }, order: Order) => {
+    const date = new Date(order.createdAt).toLocaleDateString();
+    if (!acc[date]) {
+      acc[date] = [];
+    }
+    acc[date].push(order);
+    return acc;
+  }, {});
 };
 
 const fetcher = (url: string) =>
@@ -34,13 +51,13 @@ const fetcher = (url: string) =>
 
 const AllOrdersPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedOrder, setSelectedOrder] = useState<any>(null);
+  const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [status, setStatus] = useState<string>("");
   const [updateOrderStatus] = useUpdateOrderStatusMutation();
 
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-  const { data: orders, error } = useSWR(
+  const { data: orders, error } = useSWR<Order[]>(
     `${apiUrl}/order/getorderbystatusroomid?status=DELIVERED`,
     fetcher,
     { refreshInterval: 5000 }
@@ -51,7 +68,7 @@ const AllOrdersPage = () => {
 
   const ordersGroupedByDate = groupOrdersByDate(orders);
 
-  const openModal = (order: any) => {
+  const openModal = (order: Order) => {
     setSelectedOrder(order);
     setStatus(order.status);
     setIsModalOpen(true);
@@ -62,14 +79,9 @@ const AllOrdersPage = () => {
     setSelectedOrder(null);
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    setStatus(e.target.value);
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!selectedOrder) return;
     try {
       await updateOrderStatus({ orderId: selectedOrder.id, status });
       closeModal();
@@ -108,7 +120,7 @@ const AllOrdersPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {ordersGroupedByDate[date].map((order: any) => (
+                  {ordersGroupedByDate[date].map((order) => (
                     <tr key={order.id} className="hover:bg-gray-100">
                       <td className="py-2 px-4 border-b text-center">
                         {order.roomNumber}
@@ -161,7 +173,7 @@ const AllOrdersPage = () => {
 
             <h3 className="mt-4 text-md font-semibold">Itens do Pedido:</h3>
             <ul className="list-disc pl-5 pb-2">
-              {selectedOrder.orderItems.map((item: any) => (
+              {selectedOrder.orderItems.map((item) => (
                 <li key={item.id} className="py-1">
                   <span>
                     <strong>{item.dish.name.pt}:</strong> {item.quantity} x R$
@@ -179,12 +191,6 @@ const AllOrdersPage = () => {
               >
                 Fechar
               </button>
-              {/*    <button
-                type="submit"
-                className="py-2 px-4 text-xs hover:bg-opacity-70 text-white bg-blue-700 bg-opacity-80"
-              >
-                Atualizar Status
-              </button> */}
             </div>
           </form>
         </Modal>
