@@ -23,6 +23,7 @@ import {
   noDishesText,
   welcomeText,
 } from "@/constants";
+import Splash from "@/components/ui/Splash";
 
 export default function MenuHome() {
   const [menuTypeId, setMenuTypeId] = useState(2);
@@ -83,7 +84,7 @@ export default function MenuHome() {
   }, [sessionId, createCart, cart, isCartCreated]);
 
   if (!menuByType || !menuByType.categories) {
-    return <div>No categories found.</div>;
+    return <Splash />;
   }
 
   if (!sessionId) return <div>Loading...</div>;
