@@ -80,7 +80,7 @@ export default function MenuHome() {
       setIsCartCreated(true);
       localStorage.setItem("isCartCreated", "true");
     }
-  }, [sessionId, createCart]);
+  }, [sessionId, createCart, cart, isCartCreated]);
 
   if (!menuByType || !menuByType.categories) {
     return <div>No categories found.</div>;

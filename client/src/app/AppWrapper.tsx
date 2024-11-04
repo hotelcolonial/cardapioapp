@@ -1,4 +1,3 @@
-import LanguageSelector from "@/components/admin/LanguageSelector";
 import StoreProvider from "./redux";
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {

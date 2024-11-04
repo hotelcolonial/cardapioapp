@@ -5,7 +5,7 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import Modal from "@/components/ui/Modal";
 import { useState } from "react";
 import InputField from "@/components/ui/InputField";
-import { Order, useUpdateOrderStatusMutation } from "@/state/api";
+import { Order, OrderItem, useUpdateOrderStatusMutation } from "@/state/api";
 import Swal from "sweetalert2";
 
 const fetcher = (url: string | URL | Request) =>
@@ -35,7 +35,7 @@ const OrdersPreparationPage = () => {
   if (error) return <div>Erro ao carregar pedidos</div>;
   if (!orders) return <div>Carregando...</div>;
 
-  const openModal = (order: any) => {
+  const openModal = (order: Order) => {
     setSelectedOrder(order);
     setStatus(order.status); // Armazenamos o estado atual do pedido
     setIsModalOpen(true);
@@ -120,7 +120,7 @@ const OrdersPreparationPage = () => {
 
             <h3 className="mt-4 text-md font-semibold">Itens do Pedido:</h3>
             <ul className="list-disc pl-5 pb-2">
-              {selectedOrder.orderItems.map((item: any) => (
+              {selectedOrder.orderItems.map((item: OrderItem) => (
                 <li key={item.id} className="py-1">
                   <span>
                     <strong>{item.dish.name.pt}:</strong> {item.quantity} x $
