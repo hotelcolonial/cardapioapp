@@ -11,7 +11,7 @@ const MobileNav = () => {
     setOpenMenu((state) => !state);
   };
   return (
-    <div className="lg:hidden fixed top-0 w-full z-50">
+    <div className="lg:hidden font-raleway fixed top-0 w-full z-50">
       <div className="flex justify-between absolute left-0 right-0">
         <MenuSvg openMenu={openMenu} handleOpenMenu={handleOpenMenu} />
       </div>

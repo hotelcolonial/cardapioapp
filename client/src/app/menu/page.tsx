@@ -91,7 +91,7 @@ export default function MenuHome() {
 
   const SLIDES = menuByType.categories.map((category) => ({
     title: category.name,
-    picUrl: category.picUrl,
+    picUrl: category.picUrl || `/${category.name.en.toLowerCase()}.png`,
     items: category.dishes || [],
   }));
 
@@ -120,6 +120,8 @@ export default function MenuHome() {
   };
 
   const OPTIONS: EmblaOptionsType = { align: "end" };
+
+  console.log(SLIDES[activeIndex]);
 
   return (
     <>
