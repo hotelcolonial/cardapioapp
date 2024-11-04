@@ -128,7 +128,7 @@ const CartPage = () => {
           };
           await createOrder(orderInfo);
           Swal.fire("Sucesso", "A ordem foi criada com sucesso.", "success");
-          deleteCart({ cartId: cart?.id! });
+          deleteCart({ cartId: cart?.id ?? 0 });
 
           if (typeof window !== "undefined") {
             localStorage.setItem("addedItems", JSON.stringify({}));
