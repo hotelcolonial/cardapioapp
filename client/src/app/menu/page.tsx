@@ -195,7 +195,10 @@ export default function MenuHome() {
                   },
                   index: Key | null | undefined
                 ) => (
-                  <div key={index} className="flex justify-between px-8">
+                  <div
+                    key={index}
+                    className="flex justify-between items-center px-8"
+                  >
                     <div className="w-3/4">
                       <h3 className="font-bold ">
                         {item.name[selectedLanguageMenu]}
@@ -204,7 +207,7 @@ export default function MenuHome() {
                         {item.info[selectedLanguageMenu]}
                       </p>
                     </div>
-                    <div className="flex justify-end items-end flex-col">
+                    <div className="flex justify-center items-end flex-col">
                       <p className="text-primary-green font-bold">
                         R$ {item.price.toFixed(2)}
                       </p>
