@@ -6,6 +6,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import menuRoutes from "./routes/menuRoutes";
 import orderRoutes from "./routes/orderRoutes";
+import reservationRoutes from "./routes/reservationRoutes";
 
 dotenv.config();
 const app = express();
@@ -24,6 +25,10 @@ const port = Number(process.env.PORT) || 3000;
 
 app.use("/menu", menuRoutes);
 app.use("/order", orderRoutes);
+
+/* Jantar reservation */
+
+app.use("/reservation", reservationRoutes);
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);

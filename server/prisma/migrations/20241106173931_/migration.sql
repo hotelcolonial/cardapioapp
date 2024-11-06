@@ -71,6 +71,23 @@ CREATE TABLE "OrderItem" (
     CONSTRAINT "OrderItem_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "JantarReservation" (
+    "id" SERIAL NOT NULL,
+    "fullName" TEXT NOT NULL,
+    "phoneNumber" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "adults" INTEGER NOT NULL,
+    "children0to6" INTEGER NOT NULL,
+    "children7to11" INTEGER NOT NULL,
+    "type" INTEGER NOT NULL,
+    "verification" INTEGER NOT NULL,
+    "total" INTEGER NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "JantarReservation_pkey" PRIMARY KEY ("id")
+);
+
 -- AddForeignKey
 ALTER TABLE "Category" ADD CONSTRAINT "Category_menuTypeId_fkey" FOREIGN KEY ("menuTypeId") REFERENCES "MenuType"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 

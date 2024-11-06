@@ -76,10 +76,27 @@ model OrderItem {
   order       Order     @relation(fields: [orderId], references: [id])
 }
 
+
 enum OrderStatus {
   PENDING
   COOKING
   READY
   DELIVERED
   CANCEL
+}
+
+//Jantar Revellion
+
+model JantarReservation {
+  id              Int      @id @default(autoincrement())
+  fullName        String   
+  phoneNumber     String  
+  email           String   
+  adults          Int
+  children0to6    Int
+  children7to11   Int
+  type            Int
+  verification    Int      @default(0)
+  total           Int
+  createdAt       DateTime @default(now())
 }
