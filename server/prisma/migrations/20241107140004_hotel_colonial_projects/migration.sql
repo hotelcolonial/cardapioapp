@@ -81,7 +81,7 @@ CREATE TABLE "JantarReservation" (
     "children0to6" INTEGER NOT NULL,
     "children7to11" INTEGER NOT NULL,
     "type" INTEGER NOT NULL,
-    "verification" INTEGER NOT NULL,
+    "verification" INTEGER NOT NULL DEFAULT 0,
     "total" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

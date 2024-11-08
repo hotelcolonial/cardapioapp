@@ -125,5 +125,25 @@
 
     "picUrl": "/pizza.png",
     "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Hamburguesas",
+      "pt": "Lanches",
+      "en": "Sandwiches"
+    },
+
+    "picUrl": "",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Postres",
+      "pt": "Sobremesas",
+      "en": "Desserts"
+    },
+
+    "picUrl": "",
+    "menuTypeId": 2
   }
 ]
