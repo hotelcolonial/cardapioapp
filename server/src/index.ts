@@ -7,7 +7,6 @@ import morgan from "morgan";
 import menuRoutes from "./routes/menuRoutes";
 import orderRoutes from "./routes/orderRoutes";
 import reservationRoutes from "./routes/reservationRoutes";
-import { createClient } from "@supabase/supabase-js";
 
 dotenv.config();
 const app = express();
@@ -17,11 +16,6 @@ app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-
-const supabase = createClient(
-  process.env.DATABASE_URL!,
-  process.env.DATABASE_KEY!
-);
 
 app.get("/", (req, res) => {
   res.send("This is home root");
