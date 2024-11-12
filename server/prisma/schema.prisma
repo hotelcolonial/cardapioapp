@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model MenuType {
+  id        Int       @id @default(autoincrement())
+  name      String
+  categories Category[]
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      Json // Almacena los nombres en múltiples idiomas
+  picUrl    String
+  menuTypeId Int
+ 
+  menuType  MenuType  @relation(fields: [menuTypeId], references: [id])
+  dishes    Dish[]  
+}
+
+model Dish {
+  id          Int    @id @default(autoincrement())
+  name        Json // Almacena el nombre en múltiples idiomas
+  price       Float // Precio como string, o puedes usar Decimal
+  info        Json // Almacena la información en múltiples idiomas
+  categoryId  Int
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  CartItem CartItem[]
+  OrderItem OrderItem[]
+}
+
+model Cart {
+  id          Int       @id @default(autoincrement())
+  sessionId   String
+  cartItems   CartItem[]
+}
+
+model CartItem {
+  id          Int       @id @default(autoincrement())
+  quantity    Int
+  dishId      Int
+  cartId      Int
+  dish        Dish      @relation(fields: [dishId], references: [id])
+  cart        Cart      @relation(fields: [cartId], references: [id], onDelete: Cascade)
+}
+
+model Order {
+  id          Int       @id @default(autoincrement())
+  sessionId   String
+  clientName  String
+  roomNumber  Int
+  total       Float
+  status      OrderStatus @default(PENDING)
+  orderItems  OrderItem[]
+  remainingTime Int     @default(0) 
+  createdAt   DateTime  @default(now()) 
+}
+
+model OrderItem {
+  id          Int       @id @default(autoincrement())
+  quantity    Int
+  dishId      Int
+  orderId     Int
+  dish        Dish      @relation(fields: [dishId], references: [id])
+  order       Order     @relation(fields: [orderId], references: [id])
+}
+
+
+enum OrderStatus {
+  PENDING
+  COOKING
+  READY
+  DELIVERED
+  CANCEL
+}
+
+model TimeConfiguration {
+  id               Int      @id @default(autoincrement())
+  waitTime         Int      
+  messageActivated Boolean 
+}
+
+//Jantar Revellion
+
+model JantarReservation {
+  id              Int      @id @default(autoincrement())
+  fullName        String   
+  phoneNumber     String  
+  email           String   
+  adults          Int
+  children0to6    Int
+  children7to11   Int
+  type            Int
+  verification    Int      @default(0)
+  total           Int
+  createdAt       DateTime @default(now())
+}

@@ -1,0 +1,1122 @@
+[
+  {
+    "name": {
+      "es": "Agua Sin Gas",
+      "pt": "Água Sem Gás",
+      "en": "Still Water"
+    },
+    "price": 6.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Agua Con Gas",
+      "pt": "Água Com Gás",
+      "en": "Sparkling Water"
+    },
+    "price": 6.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Agua Tónica",
+      "pt": "Água Tônica",
+      "en": "Tonic Water"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Jugo de Frutas",
+      "pt": "Suco De Frutas",
+      "en": "Fruit Juice"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Jugo de Naranja",
+      "pt": "Suco De Laranja",
+      "en": "Orange Juice"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Energético TNT",
+      "pt": "Energético TNT",
+      "en": "TNT Energy Drink"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 1
+  },
+  {
+    "name": {
+      "es": "Coca Cola",
+      "pt": "Coca Cola",
+      "en": "Coca Cola"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Coca Cola Zero",
+      "pt": "Coca Zero",
+      "en": "Coca Cola Zero"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Guaraná",
+      "pt": "Guaraná",
+      "en": "Guarana"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Fanta Naranja",
+      "pt": "Fanta Laranja",
+      "en": "Fanta Orange"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Sprite",
+      "pt": "Sprite",
+      "en": "Sprite"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Citrus",
+      "pt": "Citrus",
+      "en": "Citrus"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "350ml",
+      "pt": "350ml",
+      "en": "350ml"
+    },
+    "categoryId": 2
+  },
+  {
+    "name": {
+      "es": "Cerveza Sin Alcohol",
+      "pt": "Cerveja Sem Alcool",
+      "en": "Non-Alcoholic Beer"
+    },
+    "price": 12.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Heineken",
+      "pt": "Heineken",
+      "en": "Heineken"
+    },
+    "price": 12.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Eisenbahn",
+      "pt": "Eisenbahn",
+      "en": "Eisenbahn"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Malzbier",
+      "pt": "Malzbier",
+      "en": "Malzbier"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Brahma Doble Malta",
+      "pt": "Brahma Duplo Malte",
+      "en": "Brahma Double Malt"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Petra",
+      "pt": "Petra",
+      "en": "Petra"
+    },
+    "price": 9.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Vodka Absolut",
+      "pt": "Vodka Absolut",
+      "en": "Absolut Vodka"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Whiskey Jack Daniel's",
+      "pt": "Whiskey Jack Daniel's",
+      "en": "Jack Daniel's Whiskey"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Whiskey Johnnie Walker",
+      "pt": "Whiskey Johnnie Walker",
+      "en": "Johnnie Walker Whiskey"
+    },
+    "price": 15.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Tequila",
+      "pt": "Tequila",
+      "en": "Tequila"
+    },
+    "price": 20.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Ron",
+      "pt": "Rum",
+      "en": "Rum"
+    },
+    "price": 20.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 4
+  },
+  {
+    "name": {
+      "es": "Café Soluble",
+      "pt": "Café Solúvel",
+      "en": "Instant Coffee"
+    },
+    "price": 5.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café Negro",
+      "pt": "Café Preto",
+      "en": "Black Coffee"
+    },
+    "price": 5.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café con Leche",
+      "pt": "Café com Leite",
+      "en": "Coffee with Milk"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "200ml",
+      "pt": "200ml",
+      "en": "200ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Café Irlandés",
+      "pt": "Café Irlandês",
+      "en": "Irish Coffee"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Espresso",
+      "pt": "Espresso",
+      "en": "Espresso"
+    },
+    "price": 7.0,
+    "info": {
+      "es": "100ml",
+      "pt": "100ml",
+      "en": "100ml"
+    },
+    "categoryId": 5
+  },
+  {
+    "name": {
+      "es": "Baileys",
+      "pt": "Baileys",
+      "en": "Baileys"
+    },
+    "price": 10.0,
+    "info": {
+      "es": "50ml",
+      "pt": "50ml",
+      "en": "50ml"
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Sangría",
+      "pt": "Sangria",
+      "en": "Sangria"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Margarita",
+      "pt": "Margarita",
+      "en": "Margarita"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Caipirinha",
+      "pt": "Caipirinha",
+      "en": "Caipirinha"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Pina Colada",
+      "pt": "Pina Colada",
+      "en": "Pina Colada"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Piña Colada con Ron",
+      "pt": "Piña Colada Com Rum",
+      "en": "Pina Colada with Rum"
+    },
+    "price": 35.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 6
+  },
+  {
+    "name": {
+      "es": "Calabresa",
+      "pt": "Calabresa",
+      "en": "Calabresa"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, mozzarella, calabresa, cebolla y orégano.",
+      "pt": "Molho de tomate, mussarela, calabresa, cebola e orégano.",
+      "en": "Tomato sauce, mozzarella, calabresa sausage, onions, and oregano."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Portuguesa",
+      "pt": "Portuguesa",
+      "en": "Portuguese"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, mozzarella, jamón, huevos, cebolla, aceitunas, pimiento, tomate y orégano.",
+      "pt": "Molho de tomate, mussarela, presunto, ovos, cebola, azeitona, pimentão, tomate e orégano.",
+      "en": "Tomato sauce, mozzarella, ham, eggs, onions, olives, bell peppers, tomatoes, and oregano."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Namorado",
+      "pt": "Namorado",
+      "en": "Namorado"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, mozzarella, palmito picado y catupiry.",
+      "pt": "Molho de tomate, mussarela, palmito picado e catupiry.",
+      "en": "Tomato sauce, mozzarella, chopped hearts of palm, and catupiry cheese."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Banana con Canela",
+      "pt": "Banana com Canela",
+      "en": "Banana with Cinnamon"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Mozzarella, banana picada, leche condensada y canela en polvo.",
+      "pt": "Mussarella, banana picada, leite condensado e canela em pó.",
+      "en": "Mozzarella, chopped banana, condensed milk, and ground cinnamon."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Pollo con Catupiry",
+      "pt": "Frango com Catupiry",
+      "en": "Chicken with Catupiry"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, mozzarella, pollo desmenuzado, requesón y orégano.",
+      "pt": "Molho de tomate, mussarela, frango desfiado, requeijão e orégano.",
+      "en": "Tomato sauce, mozzarella, shredded chicken, cream cheese, and oregano."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Mozzarella",
+      "pt": "Mussarela",
+      "en": "Mozzarella"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, queso mozzarella, tomate y orégano.",
+      "pt": "Molho de tomate, queijo mussarela, tomate e orégano.",
+      "en": "Tomato sauce, mozzarella cheese, tomatoes, and oregano."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Alhobresa",
+      "pt": "Alhobresa",
+      "en": "Alhobresa"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Salsa de tomate, mozzarella, ajo frito y calabresa.",
+      "pt": "Molho de tomate, mussarella, alho frito e calabresa.",
+      "en": "Tomato sauce, mozzarella, fried garlic, and calabresa sausage."
+    },
+    "categoryId": 14
+  },
+  {
+    "name": {
+      "es": "Ensalada Colonial",
+      "pt": "Salada Colonial",
+      "en": "Colonial Salad"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Mezcla de hojas, tomates laminados, encurtidos, cebolla, queso blanco y crutones con aderezo de limón.",
+      "pt": "Mix de Folhas, tomates lâminados, picles, cebola, queijo branco e crótons ao molho de limão.",
+      "en": "Mixed greens, sliced tomatoes, pickles, onions, white cheese, and croutons with lemon dressing."
+    },
+    "categoryId": 8
+  },
+  {
+    "name": {
+      "es": "Ensalada Ejecutiva",
+      "pt": "Salada Executiva",
+      "en": "Executive Salad"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "Pequeño ramo de hojas, tomate y cebolla, acompañamiento perfecto para asados.",
+      "pt": "Pequeno buquê de folhas, tomate e cebola, perfeito acompanhamento para grelhados.",
+      "en": "Small bouquet of greens, tomato, and onion, perfect as a side for grilled dishes."
+    },
+    "categoryId": 8
+  },
+  {
+    "name": {
+      "es": "Sopa de Pollo a la Brasileña",
+      "pt": "Canja à Brasileira",
+      "en": "Brazilian Chicken Soup"
+    },
+    "price": 24.0,
+    "info": {
+      "es": "Sopa de pollo desmenuzado con zanahorias y hierbas en caldo de pollo.",
+      "pt": "Sopa de frango desfiado com cenouras e ervas no caldo de galinha.",
+      "en": "Shredded chicken soup with carrots and herbs in chicken broth."
+    },
+    "categoryId": 8
+  },
+  {
+    "name": {
+      "es": "Crema de Verduras",
+      "pt": "Creme de Legumes",
+      "en": "Vegetable Cream"
+    },
+    "price": 24.0,
+    "info": {
+      "es": "Crema de vegetales compuesta por papa, cebolla, tomates, puerro, apio y nabo; perfecta para dietas.",
+      "pt": "Creme de vegetais composto por batata, cebola, tomates, alho-porró, salsão e nabo; perfeito para dietas.",
+      "en": "Cream of vegetables made with potatoes, onions, tomatoes, leeks, celery, and turnip; perfect for diets."
+    },
+    "categoryId": 8
+  },
+  {
+    "name": {
+      "es": "Papas Fritas",
+      "pt": "Batata Frita",
+      "en": "French Fries"
+    },
+    "price": 24.0,
+    "info": {
+      "es": "400gr",
+      "pt": "400gr",
+      "en": "400gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Papas Fritas con Queso y Tocino",
+      "pt": "Batata Frita com Queijo e Bacon",
+      "en": "French Fries with Cheese and Bacon"
+    },
+    "price": 30.0,
+    "info": {
+      "es": "400gr",
+      "pt": "400gr",
+      "en": "400gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Calabresa Acebollada",
+      "pt": "Calabresa Acebolada",
+      "en": "Calabresa with Onions"
+    },
+    "price": 38.0,
+    "info": {
+      "es": "400gr",
+      "pt": "400gr",
+      "en": "400gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Tiras de Mignon",
+      "pt": "Iscas de Mignon",
+      "en": "Mignon Strips"
+    },
+    "price": 54.9,
+    "info": {
+      "es": "400gr",
+      "pt": "400gr",
+      "en": "400gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Pollo a la Passarinho",
+      "pt": "Frango à Passarinho",
+      "en": "Fried Chicken"
+    },
+    "price": 34.9,
+    "info": {
+      "es": "800gr",
+      "pt": "800gr",
+      "en": "800gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Tiras de Tilapia",
+      "pt": "Iscas de Tilápia",
+      "en": "Tilapia Strips"
+    },
+    "price": 46.0,
+    "info": {
+      "es": "400gr",
+      "pt": "400gr",
+      "en": "400gr"
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Tabla de Fiambres",
+      "pt": "Tábua de Frios",
+      "en": "Cold Cuts Platter"
+    },
+    "price": 56.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 9
+  },
+  {
+    "name": {
+      "es": "Espagueti a la Boloñesa",
+      "pt": "Espaguete à Bolonhesa",
+      "en": "Spaghetti Bolognese"
+    },
+    "price": 36.0,
+    "info": {
+      "es": "Espagueti servido con salsa boloñesa.",
+      "pt": "Espaguete servido ao molho bolonhesa.",
+      "en": "Spaghetti served with Bolognese sauce."
+    },
+    "categoryId": 10
+  },
+  {
+    "name": {
+      "es": "Espagueti al Sugo / Ajo y Aceite",
+      "pt": "Espaguete ao Sugo / Alho e Óleo",
+      "en": "Spaghetti with Tomato Sauce / Garlic and Oil"
+    },
+    "price": 36.0,
+    "info": {
+      "es": "Espagueti con salsa pomodoro / Espagueti con ajo y aceite.",
+      "pt": "Espaguete ao molho pomodoro / Espaguete ao alho e óleo.",
+      "en": "Spaghetti with tomato sauce / Spaghetti with garlic and oil."
+    },
+    "categoryId": 10
+  },
+  {
+    "name": {
+      "es": "Filete de Tilapia al Aroma de Moqueca",
+      "pt": "Filé de Tilápia ao Aroma de Moqueca",
+      "en": "Tilapia Fillet with Moqueca Aroma"
+    },
+    "price": 48.0,
+    "info": {
+      "es": "Filete de tilapia a la parrilla con aroma de moqueca, servido con arroz de coco.",
+      "pt": "Filé de tilápia grelhado ao aroma de moqueca, servido com arroz de coco.",
+      "en": "Grilled tilapia fillet with moqueca aroma, served with coconut rice."
+    },
+    "categoryId": 11
+  },
+  {
+    "name": {
+      "es": "Filete de Tilapia Empanado con Salsa Tártara",
+      "pt": "Filé de Tilápia Empanado ao Molho Tártaro",
+      "en": "Breaded Tilapia Fillet with Tartar Sauce"
+    },
+    "price": 46.0,
+    "info": {
+      "es": "Filete de tilapia empanado acompañado de salsa tártara, mini ensalada y arroz blanco.",
+      "pt": "Filé de tilápia empanado acompanhado de molho tártaro, mini salada e arroz branco.",
+      "en": "Breaded tilapia fillet served with tartar sauce, mini salad, and white rice."
+    },
+    "categoryId": 11
+  },
+  {
+    "name": {
+      "es": "Filete de Tilapia con Salsa de Limón",
+      "pt": "Filé de Tilápia ao Molho de Limão",
+      "en": "Tilapia Fillet with Lemon Sauce"
+    },
+    "price": 46.0,
+    "info": {
+      "es": "Filete de tilapia a la parrilla con salsa de limón, arroz y papas fritas.",
+      "pt": "Filé de tilápia grelhado ao molho de limão, arroz e fritas.",
+      "en": "Grilled tilapia fillet with lemon sauce, rice, and fries."
+    },
+    "categoryId": 11
+  },
+  {
+    "name": {
+      "es": "Filete de Pollo Ejecutivo",
+      "pt": "Filé de Frango Executivo",
+      "en": "Executive Chicken Fillet"
+    },
+    "price": 39.0,
+    "info": {
+      "es": "Pechuga de pollo a la parrilla, arroz blanco, papas fritas, mini ensalada y huevo frito.",
+      "pt": "Peito de frango grelhado, arroz branco, batata frita, mini salada e ovo frito.",
+      "en": "Grilled chicken breast, white rice, French fries, mini salad, and fried egg."
+    },
+    "categoryId": 12
+  },
+  {
+    "name": {
+      "es": "Pollo Tropical",
+      "pt": "Frango à Tropical",
+      "en": "Tropical Chicken"
+    },
+    "price": 39.0,
+    "info": {
+      "es": "Muslo y contramuslo a la parrilla acompañados de arroz a la griega y salsa de naranja.",
+      "pt": "Coxa e Sobrecoxa grelhadas acompanhadas de arroz à grega e molho de Laranja.",
+      "en": "Grilled thigh and drumstick served with Greek rice and orange sauce."
+    },
+    "categoryId": 12
+  },
+  {
+    "name": {
+      "es": "Clásico a la Parmesana",
+      "pt": "Clássico Parmegiana",
+      "en": "Classic Parmigiana"
+    },
+    "price": 38.0,
+    "info": {
+      "es": "Filete de pollo empanado y gratinado con salsa de tomate y queso mozzarella, acompañado de arroz y papas fritas.",
+      "pt": "Filé de frango empanado e gratinado ao molho de tomate e queijo mozzarella, acompanha arroz e batata frita.",
+      "en": "Breaded chicken fillet baked with tomato sauce and mozzarella cheese, served with rice and French fries."
+    },
+    "categoryId": 12
+  },
+  {
+    "name": {
+      "es": "Strogonoff de Pollo",
+      "pt": "Strogonoff de Frango",
+      "en": "Chicken Stroganoff"
+    },
+    "price": 36.0,
+    "info": {
+      "es": "Strogonoff de pollo, arroz y papas paja.",
+      "pt": "Strogonoff de frango, arroz e batata palha.",
+      "en": "Chicken stroganoff, served with rice and potato sticks."
+    },
+    "categoryId": 12
+  },
+  {
+    "name": {
+      "es": "Filete Mignon Colonial",
+      "pt": "Filé Mignon Colonial",
+      "en": "Colonial Filet Mignon"
+    },
+    "price": 59.0,
+    "info": {
+      "es": "Filete gratinado en mantequilla de Bourguignon, arroz blanco, col rizada salteada, huevo frito y papas fritas.",
+      "pt": "Filé gratinado em manteiga de Bourbugnone, arroz branco, couve refogada, ovo frito e batata frita.",
+      "en": "Filet grilled with Bourguignon butter, served with white rice, sautéed collard greens, fried egg, and French fries."
+    },
+    "categoryId": 13
+  },
+  {
+    "name": {
+      "es": "Filete Monte Carlo",
+      "pt": "Filé Monte Carlo",
+      "en": "Monte Carlo Filet"
+    },
+    "price": 58.0,
+    "info": {
+      "es": "Filete a la parrilla con crocante de hojas y salsa cremosa de queso, acompañado de papas fritas.",
+      "pt": "Filé grelhado com crocante de folhas ao molho cremoso de queijo, acompanha batatas fritas.",
+      "en": "Grilled filet with crispy leaves and creamy cheese sauce, served with French fries."
+    },
+    "categoryId": 13
+  },
+  {
+    "name": {
+      "es": "Paillard de Filete a la Arrabiatta",
+      "pt": "Paillard de Filé à Arrabiatta",
+      "en": "Paillard of Fillet with Arrabiata Sauce"
+    },
+    "price": 56.0,
+    "info": {
+      "es": "Paillard de filete acompañado de espagueti con pomodoro picante.",
+      "pt": "Paillard de Filé acompanhado de espaguete com pomodoro picante.",
+      "en": "Paillard of fillet served with spaghetti and spicy pomodoro sauce."
+    },
+    "categoryId": 13
+  },
+  {
+    "name": {
+      "es": "Contra Filete a la Brasileña",
+      "pt": "Contra Filé à Brasileira",
+      "en": "Brazilian Rump Steak"
+    },
+    "price": 54.0,
+    "info": {
+      "es": "Bistec de contra filete a la parrilla acompañado de vinagreta, farofa, arroz blanco y papas fritas.",
+      "pt": "Bife de contra filé grelhado acompanha vinagrete, farofa, arroz branco e batata frita.",
+      "en": "Grilled rump steak served with vinaigrette, farofa, white rice, and French fries."
+    },
+    "categoryId": 13
+  },
+  {
+    "name": {
+      "es": "Colonial Burger",
+      "pt": "Colonial Burger",
+      "en": "Colonial Burger"
+    },
+    "price": 24.0,
+    "info": {
+      "es": "Pan de hamburguesa, mayonesa casera, hamburguesa artesanal, queso mozzarella y papas fritas.",
+      "pt": "Pão de hambúrguer, maionese caseira, hambúrguer artesanal, queijo mussarela e batata frita.",
+      "en": "Burger bun, homemade mayonnaise, artisan burger, mozzarella cheese, and French fries."
+    },
+    "categoryId": 15
+  },
+  {
+    "name": {
+      "es": "Clásico Colonial",
+      "pt": "Clássico Colonial",
+      "en": "Classic Colonial"
+    },
+    "price": 26.0,
+    "info": {
+      "es": "Pan de hamburguesa, hamburguesa artesanal, queso mozzarella, lechuga, tomate, cebolla con aderezo de limón y papas fritas.",
+      "pt": "Pão de hambúrguer, hambúrguer artesanal, queijo mussarela, alface, tomate, cebola ao molho de limão e batata frita.",
+      "en": "Burger bun, artisan burger, mozzarella cheese, lettuce, tomato, onion with lemon sauce, and French fries."
+    },
+    "categoryId": 15
+  },
+  {
+    "name": {
+      "es": "Colonial BBQ",
+      "pt": "Colonial BBQ",
+      "en": "Colonial BBQ"
+    },
+    "price": 26.0,
+    "info": {
+      "es": "Pan de hamburguesa, hamburguesa artesanal, queso mozzarella, tocino con salsa barbacoa y papas fritas.",
+      "pt": "Pão de hambúrguer, hambúrguer artesanal, queijo mussarela, bacon ao molho barbecue e batata frita.",
+      "en": "Burger bun, artisan burger, mozzarella cheese, bacon with barbecue sauce, and French fries."
+    },
+    "categoryId": 15
+  },
+  {
+    "name": {
+      "es": "Top Colonial",
+      "pt": "Top Colonial",
+      "en": "Top Colonial"
+    },
+    "price": 29.0,
+    "info": {
+      "es": "Pan de hamburguesa, mayonesa casera, hamburguesa artesanal, queso mozzarella, lechuga, tocino con salsa colonial y papas fritas.",
+      "pt": "Pão de hambúrguer, maionese caseira, hambúrguer artesanal, queijo mussarela, alface, bacon ao molho colonial e batata frita.",
+      "en": "Burger bun, homemade mayonnaise, artisan burger, mozzarella cheese, lettuce, bacon with colonial sauce, and French fries."
+    },
+    "categoryId": 15
+  },
+  {
+    "name": {
+      "es": "Misto Quente",
+      "pt": "Misto Quente",
+      "en": "Grilled Cheese Sandwich"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "Pan de molde, rebanadas de queso y jamón.",
+      "pt": "Pão de forma, fatias de queijo e presunto.",
+      "en": "Sliced bread with cheese and ham."
+    },
+    "categoryId": 15
+  },
+  {
+    "name": {
+      "es": "Pudín de Leche Condensada",
+      "pt": "Pudim de Leite Condensado",
+      "en": "Condensed Milk Pudding"
+    },
+    "price": 21.0,
+    "info": {
+      "es": "110g",
+      "pt": "110g",
+      "en": "110g"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Petit Gateau",
+      "pt": "Petit Gateau",
+      "en": "Petit Gateau"
+    },
+    "price": 28.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta Banoffee",
+      "pt": "Torta Banoffee",
+      "en": "Banoffee Pie"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110g",
+      "pt": "110g",
+      "en": "110g"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta Cheesecake",
+      "pt": "Torta Cheesecake",
+      "en": "Cheesecake"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110gr",
+      "pt": "110gr",
+      "en": "110gr"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta Tiramisu",
+      "pt": "Torta Tiramisu",
+      "en": "Tiramisu Pie"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110g",
+      "pt": "110g",
+      "en": "110g"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta de Piña",
+      "pt": "Torta de Abacaxi",
+      "en": "Pineapple Pie"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110gr",
+      "pt": "110gr",
+      "en": "110gr"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta Holandesa",
+      "pt": "Torta Holandesa",
+      "en": "Dutch Pie"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110gr",
+      "pt": "110gr",
+      "en": "110gr"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Tarta de Limón",
+      "pt": "Torta de Limão",
+      "en": "Lemon Pie 110g"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "110gr",
+      "pt": "110gr",
+      "en": "110gr"
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Ensalada de Frutas",
+      "pt": "Salada de Frutas",
+      "en": "Fruit Salad"
+    },
+    "price": 18.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 16
+  },
+  {
+    "name": {
+      "es": "Açaí en Capas",
+      "pt": "Açaí Camadinha",
+      "en": "Layered Açaí"
+    },
+    "price": 28.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 16
+  }
+]

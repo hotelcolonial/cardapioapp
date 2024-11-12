@@ -1,0 +1,149 @@
+[
+  {
+    "name": {
+      "es": "Agua y Jugos",
+      "pt": "Água e Sucos",
+      "en": "Water and Juices"
+    },
+    "picUrl": "/water.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Refrescos",
+      "pt": "Refrigerantes",
+      "en": "Soft Drinks"
+    },
+    "picUrl": "/softDrinks.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Cervezas",
+      "pt": "Cervejas",
+      "en": "Beers"
+    },
+    "picUrl": "/beer.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Licores",
+      "pt": "Licores",
+      "en": "Liqueurs"
+    },
+    "picUrl": "/liqueur.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Café",
+      "pt": "Café",
+      "en": "Coffee"
+    },
+    "picUrl": "/coffee.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Bebidas en Shots",
+      "pt": "Bebidas em Dose",
+      "en": "Spirits"
+    },
+    "picUrl": "/spirits.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Tragos",
+      "pt": "Drinks",
+      "en": "Cocktails"
+    },
+    "picUrl": "/cocktails.png",
+    "menuTypeId": 1
+  },
+  {
+    "name": {
+      "es": "Entradas",
+      "pt": "Entradas",
+      "en": "Appetizers"
+    },
+    "picUrl": "/appetizers.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Porciones",
+      "pt": "Porções",
+      "en": "Side Dishes"
+    },
+    "picUrl": "/fries.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Pastas",
+      "pt": "Massas",
+      "en": "Pasta"
+    },
+    "picUrl": "/pasta.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Pescados y Mariscos",
+      "pt": "Peixes e Crustáceos",
+      "en": "Fish & Seafood"
+    },
+    "picUrl": "/fish.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Carnes de Pollo",
+      "pt": "Carnes Frango",
+      "en": "Chicken"
+    },
+    "picUrl": "/chicken.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Carnes Bovinas",
+      "pt": "Carnes Bovinas",
+      "en": "Beef"
+    },
+    "picUrl": "/beef.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Pizzas",
+      "pt": "Pizzas",
+      "en": "Pizzas"
+    },
+
+    "picUrl": "/pizza.png",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Hamburguesas",
+      "pt": "Lanches",
+      "en": "Sandwiches"
+    },
+
+    "picUrl": "",
+    "menuTypeId": 2
+  },
+  {
+    "name": {
+      "es": "Postres",
+      "pt": "Sobremesas",
+      "en": "Desserts"
+    },
+
+    "picUrl": "",
+    "menuTypeId": 2
+  }
+]
