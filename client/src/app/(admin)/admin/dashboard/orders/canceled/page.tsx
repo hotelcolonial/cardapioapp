@@ -99,11 +99,11 @@ const CancelledOrdersPage = () => {
   return (
     <div className="font-raleway py-10 lg:py-0">
       <h1 className="text-2xl font-black text-primary-green">
-        Pedidos entregues
+        Pedidos cancelados
       </h1>
       <div className="py-6">
         {Object.keys(ordersGroupedByDate).length === 0 ? (
-          <div>Não há pedidos entregues.</div>
+          <div>Não há pedidos cancelados.</div>
         ) : (
           Object.keys(ordersGroupedByDate).map((date) => (
             <div key={date} className="mb-6">
