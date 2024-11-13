@@ -130,6 +130,54 @@ const CartPage = () => {
             roomNumber: Number(roomNumber),
             orderItems: cart?.cartItems,
           };
+
+          const orderHtml = `
+          <html>
+            <body>
+              <h1>Detalhes do Pedido</h1>
+              <p><strong>Cliente:</strong> ${customerName}</p>
+              <p><strong>Número do Quarto:</strong> ${roomNumber}</p>
+              <p><strong>Total:</strong> R$ ${totalAmount.toFixed(2)}</p>
+              <h2>Itens do Pedido:</h2>
+              <ul>
+                ${cart?.cartItems
+                  .map(
+                    (item) => `
+                      <li>
+                        ${item.dish.name[selectedLanguageMenu]} - Quantidade: ${
+                      item.quantity
+                    } - Preço Total: R$ ${(
+                      item.dish.price * item.quantity
+                    ).toFixed(2)}
+                      </li>`
+                  )
+                  .join("")}
+              </ul>
+            </body>
+          </html>
+          `;
+
+          // Aquí estás construyendo el objeto para enviar en la solicitud
+          const requestBody = {
+            printData: orderHtml,
+          };
+
+          // Enviar la solicitud POST desde el cliente
+          fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/utilities/print`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(requestBody),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Impresión exitosa:", data);
+            })
+            .catch((error) => {
+              console.error("Error al imprimir:", error);
+            });
+
           await createOrder(orderInfo);
           Swal.fire("Sucesso", "A ordem foi criada com sucesso.", "success");
           deleteCart({ cartId: cart?.id ?? 0 });

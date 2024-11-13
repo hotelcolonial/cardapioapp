@@ -7,6 +7,7 @@ import morgan from "morgan";
 import menuRoutes from "./routes/menuRoutes";
 import orderRoutes from "./routes/orderRoutes";
 import reservationRoutes from "./routes/reservationRoutes";
+import utilitiesRoutes from "./routes/utilitiesRoutes"
 
 dotenv.config();
 const app = express();
@@ -29,6 +30,10 @@ app.use("/order", orderRoutes);
 /* Jantar reservation */
 
 app.use("/reservation", reservationRoutes);
+
+/* Utilities */
+
+app.use("/utilities", utilitiesRoutes);
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);
