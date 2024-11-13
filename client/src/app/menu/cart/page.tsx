@@ -116,7 +116,7 @@ const CartPage = () => {
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: buttonText[selectedLanguageMenu].confirm, // Usa el texto de confirmación según el idioma
+        confirmButtonText: buttonText[selectedLanguageMenu].confirm,
         cancelButtonText: buttonText[selectedLanguageMenu].cancel,
       });
 
@@ -131,35 +131,44 @@ const CartPage = () => {
             orderItems: cart?.cartItems,
           };
 
-          const orderHtml = `
-          <html>
-            <body>
-              <h1>Detalhes do Pedido</h1>
-              <p><strong>Cliente:</strong> ${customerName}</p>
-              <p><strong>Número do Quarto:</strong> ${roomNumber}</p>
-              <p><strong>Total:</strong> R$ ${totalAmount.toFixed(2)}</p>
-              <h2>Itens do Pedido:</h2>
-              <ul>
-                ${cart?.cartItems
-                  .map(
-                    (item) => `
-                      <li>
-                        ${item.dish.name[selectedLanguageMenu]} - Quantidade: ${
-                      item.quantity
-                    } - Preço Total: R$ ${(
-                      item.dish.price * item.quantity
-                    ).toFixed(2)}
-                      </li>`
-                  )
-                  .join("")}
-              </ul>
-            </body>
-          </html>
-          `;
+          // Generar el contenido del pedido en texto plano
+          const orderText = `
+Restaurante Villa Colonial
+==========================
 
-          // Aquí estás construyendo el objeto para enviar en la solicitud
+Detalhes do Pedido
+==================
+Cliente: ${customerName}
+Número do Quarto: ${roomNumber}
+Total: R$ ${totalAmount.toFixed(2)}
+
+Itens do Pedido:
+-----------------------------------------
+| Qt  | Descricao | Preco Unit. | Total |
+-----------------------------------------
+${cart?.cartItems
+  .map(
+    (item) =>
+      `| ${item.quantity.toString().padEnd(1)} | ${item.dish.name[
+        selectedLanguageMenu
+      ].padEnd(4)} | R$ ${item.dish.price.toFixed(2).padStart(2)} | R$ ${(
+        item.dish.price * item.quantity
+      )
+        .toFixed(2)
+        .padStart(2)} |`
+  )
+  .join("\n")}
+-----------------------------------------
+
+Obrigado pela sua preferencia!
+
+___________________________
+Assinatura do Cliente
+`;
+
+          // Construir el objeto para enviar en la solicitud
           const requestBody = {
-            printData: orderHtml,
+            printData: orderText,
           };
 
           // Enviar la solicitud POST desde el cliente
