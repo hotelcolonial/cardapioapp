@@ -12,6 +12,7 @@ import {
   useUpdateOrderRemainingTimeMutation,
 } from "@/state/api";
 import Swal from "sweetalert2";
+import { format } from "date-fns";
 
 const fetcher = (url: string | URL | Request) =>
   fetch(url).then((res) => {
@@ -35,6 +36,11 @@ const NewOrdersPage = () => {
     fetcher,
     { refreshInterval: 5000 } // Refrescar cada 5 segundos
   );
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return format(date, "dd/MM/yyyy HH:mm:ss"); // O cualquier formato que prefieras
+  };
 
   const openModal = (order: Order) => {
     setSelectedOrder(order);
@@ -132,6 +138,10 @@ const NewOrdersPage = () => {
             </p>
             <p>
               <strong>Estado Atual:</strong> {selectedOrder.status}
+            </p>
+            <p>
+              <strong>Data de Criação:</strong>{" "}
+              {formatDate(selectedOrder.createdAt)}
             </p>
 
             <h3 className="mt-4 text-md font-semibold">Ítens do Pedido:</h3>

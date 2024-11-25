@@ -63,6 +63,7 @@ export interface Order {
   status: string;
   orderItems: OrderItem[];
   remainingTime: number;
+  createdAt: string;
 }
 
 export interface TimeConfiguration {
