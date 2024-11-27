@@ -19,7 +19,7 @@
       "pt": "Água Com Gás",
       "en": "Sparkling Water"
     },
-    "price": 6.0,
+    "price": 8.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -33,7 +33,7 @@
       "pt": "Água Tônica",
       "en": "Tonic Water"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "",
       "pt": "",
@@ -47,7 +47,7 @@
       "pt": "Suco De Frutas",
       "en": "Fruit Juice"
     },
-    "price": 7.0,
+    "price": 12.0,
     "info": {
       "es": "",
       "pt": "",
@@ -61,7 +61,7 @@
       "pt": "Suco De Laranja",
       "en": "Orange Juice"
     },
-    "price": 7.0,
+    "price": 12.0,
     "info": {
       "es": "",
       "pt": "",
@@ -89,7 +89,7 @@
       "pt": "Coca Cola",
       "en": "Coca Cola"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -103,7 +103,7 @@
       "pt": "Coca Zero",
       "en": "Coca Cola Zero"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -117,7 +117,7 @@
       "pt": "Guaraná",
       "en": "Guarana"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -131,7 +131,7 @@
       "pt": "Fanta Laranja",
       "en": "Fanta Orange"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -145,7 +145,7 @@
       "pt": "Sprite",
       "en": "Sprite"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -159,7 +159,7 @@
       "pt": "Citrus",
       "en": "Citrus"
     },
-    "price": 7.0,
+    "price": 10.0,
     "info": {
       "es": "350ml",
       "pt": "350ml",
@@ -187,7 +187,7 @@
       "pt": "Heineken",
       "en": "Heineken"
     },
-    "price": 12.0,
+    "price": 16.0,
     "info": {
       "es": "",
       "pt": "",
@@ -201,7 +201,7 @@
       "pt": "Eisenbahn",
       "en": "Eisenbahn"
     },
-    "price": 10.0,
+    "price": 14.0,
     "info": {
       "es": "",
       "pt": "",
@@ -215,6 +215,20 @@
       "pt": "Malzbier",
       "en": "Malzbier"
     },
+    "price": 12.0,
+    "info": {
+      "es": "",
+      "pt": "",
+      "en": ""
+    },
+    "categoryId": 3
+  },
+  {
+    "name": {
+      "es": "Cerveja Skol",
+      "pt": "Cerveja Skol",
+      "en": "Cerveja Skol"
+    },
     "price": 10.0,
     "info": {
       "es": "",
@@ -225,25 +239,11 @@
   },
   {
     "name": {
-      "es": "Brahma Doble Malta",
-      "pt": "Brahma Duplo Malte",
-      "en": "Brahma Double Malt"
+      "es": "Cerveja original",
+      "pt": "Cerveja original",
+      "en": "Cerveja original"
     },
-    "price": 10.0,
-    "info": {
-      "es": "",
-      "pt": "",
-      "en": ""
-    },
-    "categoryId": 3
-  },
-  {
-    "name": {
-      "es": "Petra",
-      "pt": "Petra",
-      "en": "Petra"
-    },
-    "price": 9.0,
+    "price": 12.0,
     "info": {
       "es": "",
       "pt": "",
@@ -481,7 +481,7 @@
       "pt": "Calabresa",
       "en": "Calabresa"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, mozzarella, calabresa, cebolla y orégano.",
       "pt": "Molho de tomate, mussarela, calabresa, cebola e orégano.",
@@ -495,7 +495,7 @@
       "pt": "Portuguesa",
       "en": "Portuguese"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, mozzarella, jamón, huevos, cebolla, aceitunas, pimiento, tomate y orégano.",
       "pt": "Molho de tomate, mussarela, presunto, ovos, cebola, azeitona, pimentão, tomate e orégano.",
@@ -509,7 +509,7 @@
       "pt": "Namorado",
       "en": "Namorado"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, mozzarella, palmito picado y catupiry.",
       "pt": "Molho de tomate, mussarela, palmito picado e catupiry.",
@@ -523,7 +523,7 @@
       "pt": "Banana com Canela",
       "en": "Banana with Cinnamon"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Mozzarella, banana picada, leche condensada y canela en polvo.",
       "pt": "Mussarella, banana picada, leite condensado e canela em pó.",
@@ -537,7 +537,7 @@
       "pt": "Frango com Catupiry",
       "en": "Chicken with Catupiry"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, mozzarella, pollo desmenuzado, requesón y orégano.",
       "pt": "Molho de tomate, mussarela, frango desfiado, requeijão e orégano.",
@@ -551,7 +551,7 @@
       "pt": "Mussarela",
       "en": "Mozzarella"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, queso mozzarella, tomate y orégano.",
       "pt": "Molho de tomate, queijo mussarela, tomate e orégano.",
@@ -565,7 +565,7 @@
       "pt": "Alhobresa",
       "en": "Alhobresa"
     },
-    "price": 29.0,
+    "price": 32.0,
     "info": {
       "es": "Salsa de tomate, mozzarella, ajo frito y calabresa.",
       "pt": "Molho de tomate, mussarella, alho frito e calabresa.",
@@ -579,7 +579,7 @@
       "pt": "Salada Colonial",
       "en": "Colonial Salad"
     },
-    "price": 29.0,
+    "price": 38.0,
     "info": {
       "es": "Mezcla de hojas, tomates laminados, encurtidos, cebolla, queso blanco y crutones con aderezo de limón.",
       "pt": "Mix de Folhas, tomates lâminados, picles, cebola, queijo branco e crótons ao molho de limão.",
@@ -593,7 +593,7 @@
       "pt": "Salada Executiva",
       "en": "Executive Salad"
     },
-    "price": 18.0,
+    "price": 25.0,
     "info": {
       "es": "Pequeño ramo de hojas, tomate y cebolla, acompañamiento perfecto para asados.",
       "pt": "Pequeno buquê de folhas, tomate e cebola, perfeito acompanhamento para grelhados.",
@@ -607,7 +607,7 @@
       "pt": "Canja à Brasileira",
       "en": "Brazilian Chicken Soup"
     },
-    "price": 24.0,
+    "price": 25.0,
     "info": {
       "es": "Sopa de pollo desmenuzado con zanahorias y hierbas en caldo de pollo.",
       "pt": "Sopa de frango desfiado com cenouras e ervas no caldo de galinha.",
@@ -621,7 +621,7 @@
       "pt": "Creme de Legumes",
       "en": "Vegetable Cream"
     },
-    "price": 24.0,
+    "price": 29.0,
     "info": {
       "es": "Crema de vegetales compuesta por papa, cebolla, tomates, puerro, apio y nabo; perfecta para dietas.",
       "pt": "Creme de vegetais composto por batata, cebola, tomates, alho-porró, salsão e nabo; perfeito para dietas.",
@@ -635,7 +635,7 @@
       "pt": "Batata Frita",
       "en": "French Fries"
     },
-    "price": 24.0,
+    "price": 32.0,
     "info": {
       "es": "400gr",
       "pt": "400gr",
@@ -649,7 +649,7 @@
       "pt": "Batata Frita com Queijo e Bacon",
       "en": "French Fries with Cheese and Bacon"
     },
-    "price": 30.0,
+    "price": 46.0,
     "info": {
       "es": "400gr",
       "pt": "400gr",
@@ -663,7 +663,7 @@
       "pt": "Calabresa Acebolada",
       "en": "Calabresa with Onions"
     },
-    "price": 38.0,
+    "price": 40.0,
     "info": {
       "es": "400gr",
       "pt": "400gr",
@@ -673,11 +673,11 @@
   },
   {
     "name": {
-      "es": "Tiras de Mignon",
-      "pt": "Iscas de Mignon",
-      "en": "Mignon Strips"
+      "es": "Tiras de Carne",
+      "pt": "Iscas de Carne",
+      "en": "Meat Strips"
     },
-    "price": 54.9,
+    "price": 62.0,
     "info": {
       "es": "400gr",
       "pt": "400gr",
@@ -691,7 +691,7 @@
       "pt": "Frango à Passarinho",
       "en": "Fried Chicken"
     },
-    "price": 34.9,
+    "price": 40.0,
     "info": {
       "es": "800gr",
       "pt": "800gr",
@@ -733,7 +733,7 @@
       "pt": "Espaguete à Bolonhesa",
       "en": "Spaghetti Bolognese"
     },
-    "price": 36.0,
+    "price": 46.0,
     "info": {
       "es": "Espagueti servido con salsa boloñesa.",
       "pt": "Espaguete servido ao molho bolonhesa.",
@@ -747,7 +747,7 @@
       "pt": "Espaguete ao Sugo / Alho e Óleo",
       "en": "Spaghetti with Tomato Sauce / Garlic and Oil"
     },
-    "price": 36.0,
+    "price": 38.0,
     "info": {
       "es": "Espagueti con salsa pomodoro / Espagueti con ajo y aceite.",
       "pt": "Espaguete ao molho pomodoro / Espaguete ao alho e óleo.",
@@ -761,7 +761,7 @@
       "pt": "Filé de Tilápia ao Aroma de Moqueca",
       "en": "Tilapia Fillet with Moqueca Aroma"
     },
-    "price": 48.0,
+    "price": 58.0,
     "info": {
       "es": "Filete de tilapia a la parrilla con aroma de moqueca, servido con arroz de coco.",
       "pt": "Filé de tilápia grelhado ao aroma de moqueca, servido com arroz de coco.",
@@ -775,7 +775,7 @@
       "pt": "Filé de Tilápia Empanado ao Molho Tártaro",
       "en": "Breaded Tilapia Fillet with Tartar Sauce"
     },
-    "price": 46.0,
+    "price": 58.0,
     "info": {
       "es": "Filete de tilapia empanado acompañado de salsa tártara, mini ensalada y arroz blanco.",
       "pt": "Filé de tilápia empanado acompanhado de molho tártaro, mini salada e arroz branco.",
@@ -789,7 +789,7 @@
       "pt": "Filé de Tilápia ao Molho de Limão",
       "en": "Tilapia Fillet with Lemon Sauce"
     },
-    "price": 46.0,
+    "price": 50.0,
     "info": {
       "es": "Filete de tilapia a la parrilla con salsa de limón, arroz y papas fritas.",
       "pt": "Filé de tilápia grelhado ao molho de limão, arroz e fritas.",
@@ -803,7 +803,7 @@
       "pt": "Filé de Frango Executivo",
       "en": "Executive Chicken Fillet"
     },
-    "price": 39.0,
+    "price": 48.0,
     "info": {
       "es": "Pechuga de pollo a la parrilla, arroz blanco, papas fritas, mini ensalada y huevo frito.",
       "pt": "Peito de frango grelhado, arroz branco, batata frita, mini salada e ovo frito.",
@@ -811,20 +811,7 @@
     },
     "categoryId": 12
   },
-  {
-    "name": {
-      "es": "Pollo Tropical",
-      "pt": "Frango à Tropical",
-      "en": "Tropical Chicken"
-    },
-    "price": 39.0,
-    "info": {
-      "es": "Muslo y contramuslo a la parrilla acompañados de arroz a la griega y salsa de naranja.",
-      "pt": "Coxa e Sobrecoxa grelhadas acompanhadas de arroz à grega e molho de Laranja.",
-      "en": "Grilled thigh and drumstick served with Greek rice and orange sauce."
-    },
-    "categoryId": 12
-  },
+
   {
     "name": {
       "es": "Clásico a la Parmesana",
@@ -855,43 +842,29 @@
   },
   {
     "name": {
-      "es": "Filete Mignon Colonial",
-      "pt": "Filé Mignon Colonial",
-      "en": "Colonial Filet Mignon"
+      "es": "Bistec a caballo",
+      "pt": "Bife a Cavalo",
+      "en": "Steak and eggs"
     },
     "price": 59.0,
     "info": {
-      "es": "Filete gratinado en mantequilla de Bourguignon, arroz blanco, col rizada salteada, huevo frito y papas fritas.",
-      "pt": "Filé gratinado em manteiga de Bourbugnone, arroz branco, couve refogada, ovo frito e batata frita.",
-      "en": "Filet grilled with Bourguignon butter, served with white rice, sautéed collard greens, fried egg, and French fries."
+      "es": "Bife de lomo, arroz blanco, huevo frito y papas fritas.",
+      "pt": "Bife de alcatra, arroz branco, ovo frito e batata frita.",
+      "en": "Sirloin steak, white rice, fried egg, and French fries."
     },
     "categoryId": 13
   },
   {
     "name": {
       "es": "Filete Monte Carlo",
-      "pt": "Filé Monte Carlo",
-      "en": "Monte Carlo Filet"
+      "pt": "Bife a Brasileira",
+      "en": "Bistec a la parrilla (180g) acompañado de vinagreta, farofa (harina de mandioca tostada), arroz blanco y papas fritas"
     },
     "price": 58.0,
     "info": {
-      "es": "Filete a la parrilla con crocante de hojas y salsa cremosa de queso, acompañado de papas fritas.",
-      "pt": "Filé grelhado com crocante de folhas ao molho cremoso de queijo, acompanha batatas fritas.",
-      "en": "Grilled filet with crispy leaves and creamy cheese sauce, served with French fries."
-    },
-    "categoryId": 13
-  },
-  {
-    "name": {
-      "es": "Paillard de Filete a la Arrabiatta",
-      "pt": "Paillard de Filé à Arrabiatta",
-      "en": "Paillard of Fillet with Arrabiata Sauce"
-    },
-    "price": 56.0,
-    "info": {
-      "es": "Paillard de filete acompañado de espagueti con pomodoro picante.",
-      "pt": "Paillard de Filé acompanhado de espaguete com pomodoro picante.",
-      "en": "Paillard of fillet served with spaghetti and spicy pomodoro sauce."
+      "es": "Bistec a la parrilla (180g) acompañado de vinagreta, farofa (harina de mandioca tostada), arroz blanco y papas fritas",
+      "pt": "Bife grelhado (180g) acompanha vinagrete, farofa, arroz branco e batata frita.",
+      "en": "Grilled steak (180g) served with vinaigrette, farofa (toasted cassava flour), white rice, and French fries."
     },
     "categoryId": 13
   },
@@ -915,7 +888,7 @@
       "pt": "Colonial Burger",
       "en": "Colonial Burger"
     },
-    "price": 24.0,
+    "price": 32.0,
     "info": {
       "es": "Pan de hamburguesa, mayonesa casera, hamburguesa artesanal, queso mozzarella y papas fritas.",
       "pt": "Pão de hambúrguer, maionese caseira, hambúrguer artesanal, queijo mussarela e batata frita.",
@@ -929,7 +902,7 @@
       "pt": "Clássico Colonial",
       "en": "Classic Colonial"
     },
-    "price": 26.0,
+    "price": 38.0,
     "info": {
       "es": "Pan de hamburguesa, hamburguesa artesanal, queso mozzarella, lechuga, tomate, cebolla con aderezo de limón y papas fritas.",
       "pt": "Pão de hambúrguer, hambúrguer artesanal, queijo mussarela, alface, tomate, cebola ao molho de limão e batata frita.",
@@ -943,7 +916,7 @@
       "pt": "Colonial BBQ",
       "en": "Colonial BBQ"
     },
-    "price": 26.0,
+    "price": 40.0,
     "info": {
       "es": "Pan de hamburguesa, hamburguesa artesanal, queso mozzarella, tocino con salsa barbacoa y papas fritas.",
       "pt": "Pão de hambúrguer, hambúrguer artesanal, queijo mussarela, bacon ao molho barbecue e batata frita.",
@@ -957,7 +930,7 @@
       "pt": "Top Colonial",
       "en": "Top Colonial"
     },
-    "price": 29.0,
+    "price": 42.0,
     "info": {
       "es": "Pan de hamburguesa, mayonesa casera, hamburguesa artesanal, queso mozzarella, lechuga, tocino con salsa colonial y papas fritas.",
       "pt": "Pão de hambúrguer, maionese caseira, hambúrguer artesanal, queijo mussarela, alface, bacon ao molho colonial e batata frita.",
@@ -971,7 +944,7 @@
       "pt": "Misto Quente",
       "en": "Grilled Cheese Sandwich"
     },
-    "price": 18.0,
+    "price": 24.0,
     "info": {
       "es": "Pan de molde, rebanadas de queso y jamón.",
       "pt": "Pão de forma, fatias de queijo e presunto.",
@@ -999,7 +972,7 @@
       "pt": "Petit Gateau",
       "en": "Petit Gateau"
     },
-    "price": 28.0,
+    "price": 30.0,
     "info": {
       "es": "",
       "pt": "",
@@ -1007,48 +980,7 @@
     },
     "categoryId": 16
   },
-  {
-    "name": {
-      "es": "Tarta Banoffee",
-      "pt": "Torta Banoffee",
-      "en": "Banoffee Pie"
-    },
-    "price": 18.0,
-    "info": {
-      "es": "110g",
-      "pt": "110g",
-      "en": "110g"
-    },
-    "categoryId": 16
-  },
-  {
-    "name": {
-      "es": "Tarta Cheesecake",
-      "pt": "Torta Cheesecake",
-      "en": "Cheesecake"
-    },
-    "price": 18.0,
-    "info": {
-      "es": "110gr",
-      "pt": "110gr",
-      "en": "110gr"
-    },
-    "categoryId": 16
-  },
-  {
-    "name": {
-      "es": "Tarta Tiramisu",
-      "pt": "Torta Tiramisu",
-      "en": "Tiramisu Pie"
-    },
-    "price": 18.0,
-    "info": {
-      "es": "110g",
-      "pt": "110g",
-      "en": "110g"
-    },
-    "categoryId": 16
-  },
+
   {
     "name": {
       "es": "Tarta de Piña",
@@ -1063,34 +995,7 @@
     },
     "categoryId": 16
   },
-  {
-    "name": {
-      "es": "Tarta Holandesa",
-      "pt": "Torta Holandesa",
-      "en": "Dutch Pie"
-    },
-    "price": 18.0,
-    "info": {
-      "es": "110gr",
-      "pt": "110gr",
-      "en": "110gr"
-    },
-    "categoryId": 16
-  },
-  {
-    "name": {
-      "es": "Tarta de Limón",
-      "pt": "Torta de Limão",
-      "en": "Lemon Pie 110g"
-    },
-    "price": 18.0,
-    "info": {
-      "es": "110gr",
-      "pt": "110gr",
-      "en": "110gr"
-    },
-    "categoryId": 16
-  },
+
   {
     "name": {
       "es": "Ensalada de Frutas",
@@ -1111,7 +1016,7 @@
       "pt": "Açaí Camadinha",
       "en": "Layered Açaí"
     },
-    "price": 28.0,
+    "price": 30.0,
     "info": {
       "es": "",
       "pt": "",
