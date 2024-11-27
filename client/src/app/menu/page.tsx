@@ -15,6 +15,8 @@ import { TiShoppingCart, TiTick } from "react-icons/ti";
 import { v4 as uuidv4 } from "uuid";
 import LanguageSelectorMenu from "@/components/menu/LanguageSelectorMenu";
 import { useAppSelector } from "../redux";
+import { useDispatch } from "react-redux";
+import { api } from "@/state/api";
 import {
   addedToCartText,
   addToCartText,
@@ -31,6 +33,12 @@ export default function MenuHome() {
   const [sessionId, setSessionId] = useState<string>("");
   const [isCartCreated, setIsCartCreated] = useState(false);
   const [addedItems, setAddedItems] = useState<{ [key: number]: boolean }>({});
+  const dispatch = useDispatch();
+
+  const handleInvalidateCache = () => {
+    // Forzar la invalidación de la caché
+    dispatch(api.util.invalidateTags(["Menu"]));
+  };
 
   const selectedLanguageMenu = useAppSelector(
     (state) => state.global.selectedLanguageMenu
@@ -48,6 +56,7 @@ export default function MenuHome() {
   useEffect(() => {
     console.log("refetch");
     refetch();
+    handleInvalidateCache();
   }, [menuTypeId, refetch]);
 
   useEffect(() => {
