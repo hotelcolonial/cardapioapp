@@ -39,8 +39,9 @@ export default function MenuHome() {
   const { data: menuByType, refetch } = useGetMenuByTypeQuery(
     { menuTypeId },
     {
-      refetchOnMountOrArgChange: true,
-      skip: false,
+      refetchOnMountOrArgChange: true, // Refetch al cambiar argumentos
+      refetchOnFocus: true, // Refetch al volver al foco
+      refetchOnReconnect: true, // Refetch al reconectar
     }
   );
 
