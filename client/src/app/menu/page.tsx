@@ -68,7 +68,13 @@ export default function MenuHome() {
     }
   }, [addedItems]);
 
-  const { data: menuByType, refetch } = useGetMenuByTypeQuery({ menuTypeId });
+  const { data: menuByType, refetch } = useGetMenuByTypeQuery(
+    { menuTypeId },
+    {
+      refetchOnMountOrArgChange: true,
+      skip: false,
+    }
+  );
   const [createCart] = useCreateCartMutation();
   const [createCartItem] = useCreateCartItemMutation();
   const { data: cart } = useGetCartBySessionIdQuery({
@@ -130,7 +136,6 @@ export default function MenuHome() {
 
   const OPTIONS: EmblaOptionsType = { align: "end" };
 
-  console.log(SLIDES[activeIndex]);
   return (
     <>
       <div className="flex justify-end mb-4 gap-4 lg:w-3/4 font-raleway">
