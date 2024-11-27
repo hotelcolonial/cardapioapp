@@ -36,6 +36,19 @@ export default function MenuHome() {
     (state) => state.global.selectedLanguageMenu
   );
 
+  const { data: menuByType, refetch } = useGetMenuByTypeQuery(
+    { menuTypeId },
+    {
+      refetchOnMountOrArgChange: true,
+      skip: false,
+    }
+  );
+
+  useEffect(() => {
+    console.log("refetch");
+    refetch();
+  }, [menuTypeId, refetch]);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       let storedUserId = localStorage.getItem("sessionId");
@@ -68,13 +81,6 @@ export default function MenuHome() {
     }
   }, [addedItems]);
 
-  const { data: menuByType, refetch } = useGetMenuByTypeQuery(
-    { menuTypeId },
-    {
-      refetchOnMountOrArgChange: true,
-      skip: false,
-    }
-  );
   const [createCart] = useCreateCartMutation();
   const [createCartItem] = useCreateCartItemMutation();
   const { data: cart } = useGetCartBySessionIdQuery({
