@@ -85,7 +85,6 @@ CREATE TABLE "TimeConfiguration" (
 CREATE TABLE "JantarReservation" (
     "id" SERIAL NOT NULL,
     "fullName" TEXT NOT NULL,
-    "phoneNumber" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "adults" INTEGER NOT NULL,
     "children0to6" INTEGER NOT NULL,

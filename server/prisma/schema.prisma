@@ -97,7 +97,6 @@ model TimeConfiguration {
 model JantarReservation {
   id              Int      @id @default(autoincrement())
   fullName        String   
-  phoneNumber     String  
   email           String   
   adults          Int
   children0to6    Int

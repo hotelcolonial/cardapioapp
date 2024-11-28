@@ -8,22 +8,13 @@ export const createReservation = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const {
-    fullName,
-    phoneNumber,
-    email,
-    adults,
-    children0to6,
-    children7to11,
-    type,
-    total,
-  } = req.body;
+  const { fullName, email, adults, children0to6, children7to11, type, total } =
+    req.body;
 
   try {
     const newReservation = await prisma.jantarReservation.create({
       data: {
         fullName,
-        phoneNumber,
         email,
         adults: Number(adults),
         children0to6: Number(children0to6),
