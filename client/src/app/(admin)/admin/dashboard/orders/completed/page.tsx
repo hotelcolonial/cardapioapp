@@ -131,7 +131,7 @@ const CompletedOrdersPage = () => {
             </ul>
 
             <h3 className="mt-4 text-md font-semibold">Novo Estado:</h3>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap mt-2 gap-2">
               {[
                 { value: "PENDING", label: "Pendente", color: "bg-yellow-500" },
                 {
