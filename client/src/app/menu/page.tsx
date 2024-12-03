@@ -26,6 +26,15 @@ import {
   welcomeText,
 } from "@/constants";
 import Splash from "@/components/ui/Splash";
+import useSWR from "swr";
+
+const fetcher = (url: string | URL | Request) =>
+  fetch(url).then((res) => {
+    if (!res.ok) {
+      throw new Error("Erro ao carregar os pedidos");
+    }
+    return res.json();
+  });
 
 export default function MenuHome() {
   const [menuTypeId, setMenuTypeId] = useState(2);
@@ -35,16 +44,21 @@ export default function MenuHome() {
   const [addedItems, setAddedItems] = useState<{ [key: number]: boolean }>({});
   const dispatch = useDispatch();
 
-  const handleInvalidateCache = () => {
-    // Forzar la invalidación de la caché
-    dispatch(api.util.invalidateTags(["Menu"]));
-  };
+  const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+  const { data: menuByType, error } = useSWR(
+    `${apiUrl}/menu/getmenu/${menuTypeId}`,
+    fetcher,
+    { refreshInterval: 5000 } // Refrescar cada 5 segundos
+  );
+
+  console.log(menuByType);
 
   const selectedLanguageMenu = useAppSelector(
     (state) => state.global.selectedLanguageMenu
   );
 
-  const { currentData: menuByType, refetch } = useGetMenuByTypeQuery(
+  /*   const { currentData: menuByType, refetch } = useGetMenuByTypeQuery(
     { menuTypeId },
     {
       refetchOnMountOrArgChange: true, // Refetch al cambiar argumentos
@@ -52,12 +66,7 @@ export default function MenuHome() {
       refetchOnReconnect: true, // Refetch al reconectar
     }
   );
-
-  useEffect(() => {
-    console.log("refetch");
-    refetch();
-    handleInvalidateCache();
-  }, [menuTypeId, refetch]);
+ */
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -135,7 +144,6 @@ export default function MenuHome() {
   const handleCategoryChange = (category: number) => {
     setMenuTypeId(category);
     setActiveIndex(0);
-    refetch();
   };
 
   interface AddToCartParams {
