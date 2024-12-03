@@ -44,7 +44,7 @@ export default function MenuHome() {
     (state) => state.global.selectedLanguageMenu
   );
 
-  const { data: menuByType, refetch } = useGetMenuByTypeQuery(
+  const { currentData: menuByType, refetch } = useGetMenuByTypeQuery(
     { menuTypeId },
     {
       refetchOnMountOrArgChange: true, // Refetch al cambiar argumentos
