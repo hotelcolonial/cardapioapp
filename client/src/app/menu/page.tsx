@@ -190,7 +190,10 @@ export default function MenuHome() {
           language={selectedLanguageMenu}
         />
 
-        <div className="flex justify-between items-center flex-col py-10">
+        <div
+          key={menuTypeId}
+          className="flex justify-between items-center flex-col py-10"
+        >
           <div className="padding-container max-w-3xl mx-center">
             <div className="rounded-3xl overflow-hidden shadow-lg">
               <div className="w-full h-[6.5rem] overflow-hidden">
