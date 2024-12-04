@@ -42,23 +42,12 @@ export default function MenuHome() {
   const [sessionId, setSessionId] = useState<string>("");
   const [isCartCreated, setIsCartCreated] = useState(false);
   const [addedItems, setAddedItems] = useState<{ [key: number]: boolean }>({});
-  const dispatch = useDispatch();
-
-  const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-
-  const { data: menuByType, error } = useSWR(
-    `${apiUrl}/menu/getmenu/${menuTypeId}`,
-    fetcher,
-    { refreshInterval: 5000 } // Refrescar cada 5 segundos
-  );
-
-  console.log(menuByType);
 
   const selectedLanguageMenu = useAppSelector(
     (state) => state.global.selectedLanguageMenu
   );
 
-  /*   const { currentData: menuByType, refetch } = useGetMenuByTypeQuery(
+  const { currentData: menuByType, refetch } = useGetMenuByTypeQuery(
     { menuTypeId },
     {
       refetchOnMountOrArgChange: true, // Refetch al cambiar argumentos
@@ -66,7 +55,6 @@ export default function MenuHome() {
       refetchOnReconnect: true, // Refetch al reconectar
     }
   );
- */
 
   useEffect(() => {
     if (typeof window !== "undefined") {
