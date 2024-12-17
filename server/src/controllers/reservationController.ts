@@ -33,6 +33,31 @@ export const createReservation = async (
   }
 };
 
+export const updateReservationLocalizator = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  const { id } = req.params;
+  const { localizator } = req.body;
+
+  try {
+    const updatedReservation = await prisma.jantarReservation.update({
+      where: {
+        id: Number(id),
+      },
+      data: {
+        localizator,
+      },
+    });
+
+    res.json(updatedReservation);
+  } catch (error: any) {
+    res.status(500).json({
+      message: `Error updating reservation localizator: ${error.message}`,
+    });
+  }
+};
+
 export const getReservationByType = async (
   req: Request,
   res: Response

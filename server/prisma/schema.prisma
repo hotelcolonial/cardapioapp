@@ -104,5 +104,6 @@ model JantarReservation {
   type            Int
   verification    Int      @default(0)
   total           Int
+  localizator     String   @default("")
   createdAt       DateTime @default(now())
 }
