@@ -101,9 +101,9 @@ model JantarReservation {
   adults          Int
   children0to6    Int
   children7to11   Int
-  type            Int
+  selectedMeals   Json     
   verification    Int      @default(0)
-  total           Int
+  grandTotal      Int
   localizator     String   @default("")
   createdAt       DateTime @default(now())
 }

@@ -8,8 +8,16 @@ export const createReservation = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const { fullName, email, adults, children0to6, children7to11, type, total } =
-    req.body;
+  const {
+    fullName,
+    email,
+    adults,
+    children0to6,
+    children7to11,
+    selectedMeals,
+    grandTotal,
+    localizator,
+  } = req.body;
 
   try {
     const newReservation = await prisma.jantarReservation.create({
@@ -19,9 +27,10 @@ export const createReservation = async (
         adults: Number(adults),
         children0to6: Number(children0to6),
         children7to11: Number(children7to11),
-        type: Number(type),
+        selectedMeals: selectedMeals || {}, // Asegúrate de manejar valores predeterminados
         verification: 0,
-        total: Number(total),
+        grandTotal: Number(grandTotal),
+        localizator: localizator || "", // Asegúrate de manejar un valor predeterminado
       },
     });
 
@@ -29,7 +38,7 @@ export const createReservation = async (
   } catch (error: any) {
     res
       .status(500)
-      .json({ message: `Error creating category: ${error.message}` });
+      .json({ message: `Error creating reservation: ${error.message}` });
   }
 };
 
@@ -62,12 +71,15 @@ export const getReservationByType = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const type = req.query.type;
+  const { type } = req.query;
 
   try {
-    let selectedReservations = await prisma.jantarReservation.findMany({
+    const selectedReservations = await prisma.jantarReservation.findMany({
       where: {
-        type: Number(type),
+        selectedMeals: {
+          path: [type as string], // Accede a la clave dinámica en el JSON
+          gte: 0, // Asegúrate de que existe y no es nulo
+        },
       },
       orderBy: {
         id: "asc",
